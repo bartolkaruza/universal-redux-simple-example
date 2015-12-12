@@ -1,0 +1,40 @@
+{
+  "name": "universal-redux-simple-example",
+  "version": "0.0.1",
+  "description": "Simple minimal example for the universal-redux npm module setup",
+  "main": "index.js",
+  "scripts": {
+    "build": "better-npm-run build",
+    "dev": "better-npm-run dev",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "betterScripts": {
+    "dev": {
+      "command": "universal-redux-dev"
+    },
+    "build": {
+      "command": "universal-redux-build",
+      "env": {
+        "NODE_PATH": "./src",
+        "NODE_ENV": "production"
+      }
+    },
+    "watch-client": {
+      "command": "universal-redux-watch",
+      "env": {
+        "NODE_PATH": "./src",
+        "UV_THREADPOOL_SIZE": 100
+      }
+    }
+  },
+  "author": {
+    "name": "Bartol Karuza"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "universal-redux": "^0.16.7"
+  },
+  "devDependencies": {
+    "better-npm-run": "0.0.5"
+  }
+}
