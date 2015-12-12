@@ -34,7 +34,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "universal-redux": "^0.16.9"
+    "universal-redux": "^0.16.10"
   },
   "devDependencies": {
     "babel-core": "~5.8.33",
