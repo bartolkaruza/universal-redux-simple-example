@@ -5,11 +5,13 @@
   "main": "index.js",
   "scripts": {
     "build": "better-npm-run build",
-    "dev": "better-npm-run dev",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev-server": "better-npm-run dev-server",
+    "dev": "concurrent --kill-others \"npm run watch-client\" \"npm run dev-server\"",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch-client": "better-npm-run watch-client"
   },
   "betterScripts": {
-    "dev": {
+    "dev-server": {
       "command": "universal-redux-server"
     },
     "build": {
@@ -40,7 +42,12 @@
     "babel-plugin-typecheck": "^2.0.0",
     "babel-runtime": "~5.8.29",
     "better-npm-run": "0.0.5",
+    "concurrently": "1.0.0",
     "deep-equal": "^1.0.1",
+    "eslint": "1.8.0",
+    "eslint-config-airbnb": "0.1.0",
+    "eslint-plugin-import": "^0.8.0",
+    "eslint-plugin-react": "^3.5.0",
     "invariant": "^2.2.0",
     "react": "^0.14.3",
     "react-dom": "^0.14.3",
