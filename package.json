@@ -10,7 +10,7 @@
   },
   "betterScripts": {
     "dev": {
-      "command": "universal-redux-dev"
+      "command": "universal-redux-server"
     },
     "build": {
       "command": "universal-redux-build",
@@ -32,9 +32,13 @@
   },
   "license": "MIT",
   "dependencies": {
-    "universal-redux": "^0.16.7"
+    "universal-redux": "^0.16.8"
   },
   "devDependencies": {
-    "better-npm-run": "0.0.5"
+    "better-npm-run": "0.0.5",
+    "react": "^0.14.3",
+    "react-dom": "^0.14.3",
+    "redux-router": "^1.0.0-beta4",
+    "url-loader": "^0.5.7"
   }
 }
