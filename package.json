@@ -34,7 +34,8 @@
   },
   "license": "MIT",
   "dependencies": {
-    "universal-redux": "^2.0.0-beta4"
+    "universal-redux": "^2.0.0-beta4",
+    "redux-simple-router": "1.0.1"
   },
   "devDependencies": {
     "babel-core": "~6.0.0",
@@ -52,7 +53,6 @@
     "react-tools": "^0.10.0",
     "react-transform-catch-errors": "^1.0.0",
     "redbox-react": "^1.1.1",
-    "redux-simple-router": "1.0.1",
     "url-loader": "^0.5.7",
     "warning": "^2.1.0"
   }
