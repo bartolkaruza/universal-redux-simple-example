@@ -7,14 +7,6 @@ const sourceRoot = path.resolve(__dirname, '../src');
 module.exports = {
 
   /*
-   // Metadata for the site
-   */
-  app: {
-    title: 'Universal Redux npm test',
-    description: 'My description'
-  },
-
-  /*
    // Express configuration
    */
   server: {
@@ -30,7 +22,23 @@ module.exports = {
      //
      // Expects: Number
      */
-    port: process.env.PORT || 3000
+    port: process.env.PORT || 3000,
+
+    /*
+    // The path at which static assets are served from. If omitted, Express will
+    // not serve any static assets. Optional.
+    //
+    // Expects: String
+    */
+    // staticPath: projectRoot + '/static',
+
+    /*
+    // The path at which a favicon image will be served from using the `serve-favicon`
+    // library. If omitted, Express will not serve a favicon. Optional.
+    //
+    // Expects: String
+    */
+    // favicon: projectRoot + '/static/favicon.ico'
   },
 
   /*
@@ -106,7 +114,7 @@ module.exports = {
      //
      // Expects: String
      */
-    // middleware: sourceRoot + '/redux/middleware/index.js',
+    middleware: sourceRoot + '/redux/middleware/index.js'
   },
 
   /*

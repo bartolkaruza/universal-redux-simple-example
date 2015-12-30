@@ -10,7 +10,6 @@ function thunkMiddleware() {
   };
 }
 
-
 export default {
   thunk: thunkMiddleware
 };
