@@ -34,8 +34,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "universal-redux": "^2.0.0-beta18",
-    "redux-simple-router": "1.0.1"
+    "universal-redux": "3.0.0-beta1"
   },
   "devDependencies": {
     "better-npm-run": "0.0.5",
@@ -49,7 +48,7 @@
     "react": "^0.14.3",
     "react-dom": "^0.14.3",
     "react-redux": "4.0.0",
-    "react-router": "1.0.3",
+    "react-router": "^2.0.0-rc4",
     "react-tools": "^0.10.0",
     "react-transform-catch-errors": "^1.0.0",
     "redbox-react": "^1.1.1",
